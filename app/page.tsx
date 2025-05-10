@@ -1,3 +1,9 @@
+import Menu from "@/app/components/menu";
+
 export default function Home() {
-  return <div>coffee odyssey</div>;
+  return (
+    <div>
+      <Menu />
+    </div>
+  );
 }
