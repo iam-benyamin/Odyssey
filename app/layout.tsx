@@ -6,7 +6,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa-ir">
+    <html lang="fa-ir" dir="rtl">
       <body>{children}</body>
     </html>
   );
