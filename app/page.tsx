@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Menu from "@/app/components/menu";
-import logo from "@/public/20250430_222110.jpg";
+// import Image from "next/image";
+// import logo from "@/public/20250430_222110.jpg";
 
 export default function Home() {
   return (
