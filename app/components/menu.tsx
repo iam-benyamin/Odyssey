@@ -95,18 +95,18 @@ const menuData: MenuSection[] = [
 
 export default function Menu() {
   return (
-    <div className="bg-gradient-to-b from-[#ae8b70] to-[#b6a163] min-h-screen my-4 pt-20 p-6 border-[#92776b] border-t-8  rounded-[50px]">
+    <div className="bg-gradient-to-b from-[#ae8b70] to-[#b6a163] min-h-screen pt-20 p-6">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {menuData.map((section, index) => (
           <div key={index}>
-            <h2 className="text-5xl pb-2 mb-3">
+            <h2 className="text-4xl pb-2 mb-3">
               {section.title}
             </h2>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2">
               {section.items.map((item, i) => (
-                <li key={i} className="flex justify-between gap-1 text-center">
-                  <span className="text-lg bg-[#38383a] text-white py-2 px-4 rounded w-1/2">{item.name}</span>
-                  <span className="text-lg bg-[#eeeeee] text-black py-2 px-4 rounded w-1/2">{item.price}</span>
+                <li key={i} className="flex justify-between gap-1 text-center text-base">
+                  <span className="bg-[#38383a] text-white py-2 px-3 rounded w-1/2">{item.name}</span>
+                  <span className="bg-[#eeeeee] text-black py-2 px-3 rounded w-1/2">{item.price}</span>
                 </li>
               ))}
             </ul>
